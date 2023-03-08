@@ -1,0 +1,92 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  text-align: center;
+  //max-width: 800px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+#hero {
+  background-image: url(https://images.fineartamerica.com/images-medium-large-5/st-paul-sunset-mark-goodman.jpg);
+  background-size: cover;
+  padding: 10px 0 230px 0;
+  color: #ffffff;
+  text-shadow: 0 0 4px black;
+}
+
+#hero-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 117px 1em 0;
+}
+
+#hero-text {
+  background: rgba(28.6, 31.4, 34.1, 0.7);
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+#hero-subtext {
+  background: rgba(28.6, 31.4, 34.1, 0.7);
+  /*0.7 changes the opacity for the background*/
+  padding: 5px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.stp-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 10px #1d3557);
+}
+
+#activities-section {
+  padding: 10px 0;
+  background: #f1faee;
+  //height: 400px;
+  margin-bottom: 30px;
+}
+
+#activities {
+  display: flex;
+    /* adding wrap and justify-content: center will improve resizing browswer */
+  flex-wrap:wrap;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.stp-activity {
+  width: 200px;
+  //height: 250px;
+  padding: 15px 20px;
+  transition: transform 0.2s;
+}
+
+.stp-activity:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+#guide-img {
+  width: 150px;
+  border-radius: 25px;
+  margin: 0 20px 0 0;
+}
+
+#guide-section {
+  display: flex;
+  padding: 20px;
+  max-width: 400px;
+  margin: 30px auto;
+  border-radius: 10px;
+  background: #a8dadc;
+  filter: drop-shadow(10px 10px 15px #457b9d);
+}
